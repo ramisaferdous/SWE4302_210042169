@@ -30,15 +30,15 @@
         {
             this.button2 = new System.Windows.Forms.Button();
             this.pass_tb = new System.Windows.Forms.MaskedTextBox();
-            this.user_tb = new System.Windows.Forms.MaskedTextBox();
+            this.username_tb = new System.Windows.Forms.MaskedTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.name_tb = new System.Windows.Forms.MaskedTextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
+            this.retype = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
             // 
             // button2
@@ -58,12 +58,12 @@
             this.pass_tb.Size = new System.Drawing.Size(129, 26);
             this.pass_tb.TabIndex = 12;
             // 
-            // user_tb
+            // username_tb
             // 
-            this.user_tb.Location = new System.Drawing.Point(240, 101);
-            this.user_tb.Name = "user_tb";
-            this.user_tb.Size = new System.Drawing.Size(129, 26);
-            this.user_tb.TabIndex = 11;
+            this.username_tb.Location = new System.Drawing.Point(240, 101);
+            this.username_tb.Name = "username_tb";
+            this.username_tb.Size = new System.Drawing.Size(129, 26);
+            this.username_tb.TabIndex = 11;
             // 
             // label3
             // 
@@ -82,6 +82,7 @@
             this.button1.TabIndex = 9;
             this.button1.Text = "Log in";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label2
             // 
@@ -111,12 +112,13 @@
             this.label4.TabIndex = 14;
             this.label4.Text = "name:";
             // 
-            // maskedTextBox1
+            // name_tb
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(240, 58);
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(129, 26);
-            this.maskedTextBox1.TabIndex = 15;
+            this.name_tb.Location = new System.Drawing.Point(240, 58);
+            this.name_tb.Name = "name_tb";
+            this.name_tb.Size = new System.Drawing.Size(129, 26);
+            this.name_tb.TabIndex = 15;
+            this.name_tb.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox1_MaskInputRejected);
             // 
             // label5
             // 
@@ -128,25 +130,25 @@
             this.label5.Tag = "";
             this.label5.Text = " re-type password:";
             // 
-            // maskedTextBox2
+            // retype
             // 
-            this.maskedTextBox2.Location = new System.Drawing.Point(240, 183);
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(129, 26);
-            this.maskedTextBox2.TabIndex = 17;
+            this.retype.Location = new System.Drawing.Point(240, 183);
+            this.retype.Name = "retype";
+            this.retype.Size = new System.Drawing.Size(129, 26);
+            this.retype.TabIndex = 17;
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.maskedTextBox2);
+            this.Controls.Add(this.retype);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.maskedTextBox1);
+            this.Controls.Add(this.name_tb);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.pass_tb);
-            this.Controls.Add(this.user_tb);
+            this.Controls.Add(this.username_tb);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
@@ -163,14 +165,14 @@
 
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.MaskedTextBox pass_tb;
-        private System.Windows.Forms.MaskedTextBox user_tb;
+        private System.Windows.Forms.MaskedTextBox username_tb;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.MaskedTextBox name_tb;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
+        private System.Windows.Forms.MaskedTextBox retype;
     }
 }

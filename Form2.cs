@@ -28,5 +28,18 @@ namespace lab_09
             f1.Show();
             this.Hide();
         }
+
+        private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string name = name_tb.Text;
+            string user = username_tb.Text;
+            string password =
+
+        }
     }
 }
