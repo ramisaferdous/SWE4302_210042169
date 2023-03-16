@@ -51,9 +51,23 @@ namespace lab_09
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form3 f3 = new Form3();
-            f3.Show();
-            this.Hide();
+            string user_name = username_tb.Text;
+            string password = pass_tb.Text;
+
+            foreach (user u in system.users)
+            {
+                if (u.username != user_name && u.password != password)
+                {
+                    MessageBox.Show("Wrong username or Password");
+                }
+                else
+                {
+                    Form3 f3 = new Form3();
+                    f3.Show();
+                    this.Hide();
+                }
+            }
+           
         }
     }
 }

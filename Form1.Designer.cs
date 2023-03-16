@@ -32,7 +32,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.user_tb = new System.Windows.Forms.MaskedTextBox();
+            this.username_tb = new System.Windows.Forms.MaskedTextBox();
             this.pass_tb = new System.Windows.Forms.MaskedTextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -77,13 +77,13 @@
             this.label3.TabIndex = 3;
             this.label3.Text = "Don\'t have an account?";
             // 
-            // user_tb
+            // username_tb
             // 
-            this.user_tb.Location = new System.Drawing.Point(218, 60);
-            this.user_tb.Name = "user_tb";
-            this.user_tb.Size = new System.Drawing.Size(129, 26);
-            this.user_tb.TabIndex = 4;
-            this.user_tb.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.user_tb_MaskInputRejected);
+            this.username_tb.Location = new System.Drawing.Point(218, 60);
+            this.username_tb.Name = "username_tb";
+            this.username_tb.Size = new System.Drawing.Size(129, 26);
+            this.username_tb.TabIndex = 4;
+            this.username_tb.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.user_tb_MaskInputRejected);
             // 
             // pass_tb
             // 
@@ -110,7 +110,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.pass_tb);
-            this.Controls.Add(this.user_tb);
+            this.Controls.Add(this.username_tb);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
@@ -129,7 +129,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.MaskedTextBox user_tb;
+        private System.Windows.Forms.MaskedTextBox username_tb;
         private System.Windows.Forms.MaskedTextBox pass_tb;
         private System.Windows.Forms.Button button2;
     }
