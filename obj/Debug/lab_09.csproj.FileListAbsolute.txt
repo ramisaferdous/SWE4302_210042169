@@ -1,0 +1,13 @@
+C:\Users\user\Desktop\Final\lab_09\bin\Debug\lab_09.exe.config
+C:\Users\user\Desktop\Final\lab_09\bin\Debug\lab_09.exe
+C:\Users\user\Desktop\Final\lab_09\bin\Debug\lab_09.pdb
+C:\Users\user\Desktop\Final\lab_09\obj\Debug\lab_09.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\Final\lab_09\obj\Debug\lab_09.csproj.SuggestedBindingRedirects.cache
+C:\Users\user\Desktop\Final\lab_09\obj\Debug\lab_09.Form1.resources
+C:\Users\user\Desktop\Final\lab_09\obj\Debug\lab_09.Form2.resources
+C:\Users\user\Desktop\Final\lab_09\obj\Debug\lab_09.Form3.resources
+C:\Users\user\Desktop\Final\lab_09\obj\Debug\lab_09.Properties.Resources.resources
+C:\Users\user\Desktop\Final\lab_09\obj\Debug\lab_09.csproj.GenerateResource.cache
+C:\Users\user\Desktop\Final\lab_09\obj\Debug\lab_09.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Final\lab_09\obj\Debug\lab_09.exe
+C:\Users\user\Desktop\Final\lab_09\obj\Debug\lab_09.pdb
